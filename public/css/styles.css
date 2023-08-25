@@ -1,0 +1,115 @@
+htm, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('../img/mesa.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+#main-container {
+    padding: 30px 0;
+    max-width: 500px;
+    min-height: 500px;
+}
+
+#notes {
+    transition: 1.5s;
+}
+
+#notes:hover {
+    color: #2158CA;
+    font-size: bold;
+}
+
+#main-container .actions-column {
+    display: flex;
+}
+
+.title-column {
+    width: 100%;
+}
+
+.title-column a {
+    color: #212529;
+    text-decoration: none;
+}
+
+.title-column a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    margin-right: 12px;
+}
+
+
+footer {
+    /* position: relative; */
+    height: 200px;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes-footer {
+    transition: 1.5s;
+}
+
+.notes-footer:hover {
+    color: #2158CA;
+}
+
+@media (max-width: 425px) {
+
+    #main-container {
+        padding: 30px;
+    }
+
+    #main-container td {
+        height: 70px;
+    }
+
+    #main-container .btn {
+        height: 40px;
+    }
+
+}
+
+
+@media screen and (min-width: 1800px) {
+    body {
+      display: grid; /* Usamos grid layout para colocar o rodapé no final da página */
+      grid-template-rows: 1fr auto; /* Uma linha para o conteúdo da página e outra para o rodapé */
+      min-height: 100vh; /* Garantimos que a altura da página seja pelo menos 100% da altura da tela */
+    }
+  
+    .navbar {
+        height: 70px;
+    }
+
+    html, body {
+        height: 100%;
+    }
+    
+    #main-container {
+        padding: 30px 0;
+        max-width: 500px;
+        min-height: 500px;
+        margin-top: -650px;
+        display: flex;
+        justify-content: center;
+    }
+    
+  
+    .footer {
+      position: relative; /* O rodapé será posicionado em relação ao conteúdo da página */
+      bottom: 0; /* Alinha o rodapé na parte inferior da página */
+      width: 100%; /* Garante que o rodapé tenha a largura total da página */
+    }
+  }
